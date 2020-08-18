@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FizzBuzz</title>
+    <style>
+        body {
+            margin-top: 65px;
+            background: rgb(15, 27, 232);
+            background: linear-gradient(0deg, rgba(15, 27, 232, 1) 0%, rgba(40, 102, 191, 1) 16%, rgba(243, 103, 4, 1) 100%);
+        }
+
+        h1 {
+            text-align: center;
+            color: purple;
+            padding: 20px;
+            margin: 10px;
+        }
+
+        p {
+            text-align: center;
+            color: purple;
+            font-size: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4"></div>
+            <div class="col-lg-4">
+                <h1>FizzBuzz Challenge</h1>
+                <script>
+                    for (let i = 1; i <= 100; i++) {
+                        if ((i % 5 == 0) && (i % 3 == 0)) {
+                            document.writeln("<p>FizzBuzz</p>");
+                        }
+                        else if (i % 5 == 0) {
+                            document.writeln("<p>Fizz</p>");
+                        }
+                        else if (i % 3 == 0) {
+                            document.writeln("<p>Buzz</p>");
+                        }
+                        else {
+                            document.writeln("<p>" + i + "</p>");
+                        }
+                    }
+                </script>
+            </div>
+            <div class="col-lg-4"></div>
+        </div>
+    </div>
+</body>
+
+</html>
